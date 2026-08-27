@@ -1,2 +1,2 @@
 # sql-academy-shop-postgresql
-A complete PostgreSQL training environment for an online store, including a realistic data model, database setup script, sample data, and 50 practical SQL exercises with full solutions.
+Kompletne środowisko treningowe PostgreSQL dla sklepu internetowego: realistyczny model danych, skrypt inicjalizacyjny, dane testowe oraz 50 praktycznych zadań SQL z pełnymi rozwiązaniami.
