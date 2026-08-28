@@ -47,6 +47,7 @@ VALUES ('Testowa','Osoba','testowa.osoba@example.com',NULL,'Warszawa','Polska',t
 
 SELECT customer_id, email FROM academy.customers WHERE email = 'testowa.osoba@example.com';
 
+
 -- Zadanie 09: Zmień miasto klienta filip.u@example.com na Radom.
 -- Oczekiwany wynik: Zmieniony dokładnie jeden klient.
 UPDATE academy.customers
@@ -54,3 +55,9 @@ SET city = 'Radom'
 WHERE email = 'filip.u@example.com'
 
 SELECT * FROM academy.customers WHERE email = 'filip.u@example.com'
+
+
+-- Zadanie 10: Oblicz minimalną, maksymalną i średnią cenę produktu.
+-- Oczekiwany wynik: Jeden wiersz z trzema miarami.
+SELECT MIN(unit_price) AS min_price, MAX(unit_price) AS max_price, ROUND(AVG(unit_price), 2) AS avg_price
+FROM academy.products;
