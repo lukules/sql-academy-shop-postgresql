@@ -25,9 +25,9 @@ WHERE unit_price > 500 AND (category_id = 1 OR category_id = 2)
 SELECT product_id, product_name FROM academy.products WHERE NOT discontinued;
 
 
-
-
-
+-- Zadnaie 06 - Pokaż pięć najnowszych zamówień.
+-- Oczekiwany wynik: Pięć rekordów od najnowszego.
+SELECT * FROM orders;
 
 
 
