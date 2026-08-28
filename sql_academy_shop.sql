@@ -47,3 +47,10 @@ VALUES ('Testowa','Osoba','testowa.osoba@example.com',NULL,'Warszawa','Polska',t
 
 SELECT customer_id, email FROM academy.customers WHERE email = 'testowa.osoba@example.com';
 
+-- Zadanie 09: Zmień miasto klienta filip.u@example.com na Radom.
+-- Oczekiwany wynik: Zmieniony dokładnie jeden klient.
+UPDATE academy.customers
+SET city = 'Radom' 
+WHERE email = 'filip.u@example.com'
+
+SELECT * FROM academy.customers WHERE email = 'filip.u@example.com'
