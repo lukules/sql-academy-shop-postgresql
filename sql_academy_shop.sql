@@ -33,5 +33,9 @@ LIMIT 5;
 
 -- Zadanie 07 - Pokaż osobno klientów bez telefonu i zamówienia z datą wysyłki.
 -- Oczekiwany wynik: Dwa wyniki
-SELECT * FROM academy.clients;
+SELECT customer_id, first_name, last_name, phone FROM academy.customers
+WHERE phone IS null;
+
+SELECT order_id, shipped_date FROM academy.orders 
+WHERE shipped_Date IS NOT NULL;
 
