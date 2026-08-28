@@ -39,3 +39,11 @@ WHERE phone IS null;
 SELECT order_id, shipped_date FROM academy.orders 
 WHERE shipped_Date IS NOT NULL;
 
+
+-- Zadanie 08 - Dodaj testowego, aktywnego klienta z Warszawy.
+-- Oczekiwany wynik: Jeden nowy rekord, następnie kontrola.
+INSERT INTO academy.customers (first_name,last_name,email,phone,city,country,is_active)
+VALUES ('Testowa','Osoba','testowa.osoba@example.com',NULL,'Warszawa','Polska',true);
+
+SELECT customer_id, email FROM academy.customers WHERE email = 'testowa.osoba@example.com';
+
